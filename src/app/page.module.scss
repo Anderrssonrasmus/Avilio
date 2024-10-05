@@ -1,0 +1,33 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  height: 100dvh;
+  padding: 1.5em 0;
+  grid-gap: 24px;
+
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    grid-column: span 9;
+    grid-row: 4 / 9;
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: 400;
+    }
+
+    h1 {
+      font-size: 4em;
+      font-weight: 500;
+      max-width: 850px;
+    }
+
+    p {
+      font-size: 1.125em;
+      font-weight: 300;
+      max-width: 850px;
+    }
+  }
+}

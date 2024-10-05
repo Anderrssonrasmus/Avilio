@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: inherit;
+            gap: 1.5em;
+            list-style: none;
+
+            a {
+                color: white;
+                font-size: 1.125em;
+                font-weight: 300;
+            }
+        }
+
+        .contactButton {
+            padding: 0.75em 2em;
+            border: 2px solid white;
+            border-radius: 100px;
+            font-size: 1.125em;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.brandSlider {
+    grid-column: span 9;
+    grid-row: 12 / 14;
+    width: 100%;
+    background: #D9D9D91a; //10% opacity
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    overflow-x: hidden;
+
+    .imageBox {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        align-items: center;
+        justify-content: flex-start;
+        animation: loop linear infinite;
+        animation-duration: 20s;
+
+        .looper {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+
+    @keyframes loop {
+        from {
+            transform: translateX(0%);
+        }
+
+        to {
+            transform: translateX(-50.8%);
+        }
+    }
+}
