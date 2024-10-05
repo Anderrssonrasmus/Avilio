@@ -2,7 +2,7 @@
 
 import React from 'react'
 import styles from "./brandSlider.module.scss"
-import images from "./images";
+import images from "./images"; //all brand images from the ./images.js
 import Image from 'next/image';
 
 export default function BrandSlider() {
