@@ -20,6 +20,9 @@ export default function BrandSlider() {
                     {images.map((brand, key) => (
                         <Image src={brand.src} key={key} width={132} height={0} style={{ height: 'auto' }} quality={100} alt={brand.alt} unoptimized />
                     ))}
+                    {images.map((brand, key) => (
+                        <Image src={brand.src} key={key} width={132} height={0} style={{ height: 'auto' }} quality={100} alt={brand.alt} unoptimized />
+                    ))}
                 </div>
             </div>
 
