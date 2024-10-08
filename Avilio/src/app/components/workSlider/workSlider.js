@@ -32,7 +32,7 @@ export default function workSlider() {
     })
 
     return (
-        <>
+        <section className={styles.work}>
             <div className={styles.sliderControls}>
                 <h3>Case studies</h3>
                 <div>
@@ -40,13 +40,13 @@ export default function workSlider() {
                     <button onClick={() => setCurrentSlide(currentSlide + card.current.offsetWidth + 20)} ref={(nextButton)}><Image src={arrow} height={16} width={16} alt="" /></button>
                 </div>
             </div>
-            <section className={styles.workSlider} ref={(card)}>
+            <div className={styles.workSlider} ref={(card)}>
                 <div className={styles.workSliderTrack} style={{ transform: `translatex(${-currentSlide}px)` }}>
                     {logos.map((card, key) => (
                         <WorkCard tags="Webdesign, web development" logo={card.src} key={key} alt={card.alt} />
                     ))}
                 </div>
-            </section>
-        </>
+            </div>
+        </section>
     )
 }

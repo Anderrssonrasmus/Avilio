@@ -16,7 +16,6 @@ export default function Home() {
             et netus et malesuada fames ac turpis egestas.
           </p>
         </section>
-
         <BrandSlider />
         <WorkSlider />
       </main>
